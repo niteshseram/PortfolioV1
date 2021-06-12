@@ -17,7 +17,7 @@ export const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media ${(props) => props.theme.breakpoints.sm} {
+    @media ${(props) => props.theme.breakpoints.md} {
       position: absolute;
       top: 0;
       right: 0;
@@ -89,7 +89,7 @@ export const HamburgerContainer = styled.div`
   display: none;
   z-index: 2;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.md} {
     display: flex;
   }
 `;

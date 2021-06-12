@@ -25,4 +25,10 @@ export const Button = styled.button`
         ${(props) => props.theme.colors.buttonShadow1},
       inset -9px -9px 16px ${(props) => props.theme.colors.buttonShadow2};
   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1.6rem;
+    width: 150px;
+    height: 50px;
+  }
 `;
