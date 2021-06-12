@@ -2,17 +2,28 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   min-height: 90vh;
-  overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding-left: 20px;
-
+  justify-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 `;
 
+//ImgSection
+export const ProfileImgContainer = styled.div`
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  display: none;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+  }
+`;
+
+// Left Section
 export const LeftSection = styled.section`
   display: flex;
   justify-content: center;
@@ -25,7 +36,6 @@ export const LeftSection = styled.section`
 export const HeroText = styled.h6`
   font-size: 3rem;
   font-family: ${(props) => props.theme.fonts.fira};
-  width: 100%;
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 2.4rem;
   }
@@ -45,7 +55,7 @@ export const HeroName = styled.h1`
     font-size: 8rem;
   }
   @media ${(props) => props.theme.breakpoints.xs} {
-    font-size: 4.5rem;
+    font-size: 5rem;
     margin-bottom: 20px;
   }
 `;

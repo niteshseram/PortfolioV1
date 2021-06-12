@@ -15,7 +15,7 @@ export const Button = styled.button`
     -9px -9px 16px ${(props) => props.theme.colors.buttonShadow2};
   cursor: pointer;
   border: none;
-  transition: all 1.5s linear;
+  transition: all 1s linear;
   &:focus {
     outline: none;
   }
@@ -30,5 +30,14 @@ export const Button = styled.button`
     font-size: 1.6rem;
     width: 150px;
     height: 50px;
+
+    box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
+      -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
+
+    &:hover {
+      box-shadow: inset 5px 5px 16px
+          ${(props) => props.theme.colors.buttonShadow1},
+        inset -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
+    }
   }
 `;

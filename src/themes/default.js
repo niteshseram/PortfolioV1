@@ -8,11 +8,12 @@ export default {
   // Colors for layout
   colors: {
     bg: "#07111A",
-    text: "#fff",
+    text: "#FFF",
+    paraText: "#FFFFFF80",
     secondary: "#40376E",
     bubble: "#0F1624",
-    buttonShadow1: "black",
-    buttonShadow2: "#0c1925",
+    buttonShadow1: "#03080C",
+    buttonShadow2: "#0C1925",
   },
   // Breakpoints for responsive design
   breakpoints: {
