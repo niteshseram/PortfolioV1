@@ -1,13 +1,15 @@
 export default {
   // Temp fonts
   fonts: {
-    title: "Space Grotesk, sans-serif",
-    main: "Space Grotesk, sans-serif",
+    title: "Roboto, sans-serif",
+    main: "Roboto, sans-serif",
   },
   // Colors for layout
   colors: {
     bg: "#07111A",
     text: "#fff",
+    secondary: "#40376E",
+    bubble: "#0F1624",
   },
   // Breakpoints for responsive design
   breakpoints: {
