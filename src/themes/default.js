@@ -3,6 +3,7 @@ export default {
   fonts: {
     title: "Roboto, sans-serif",
     main: "Roboto, sans-serif",
+    fira: "Fira Code, sans-serif",
   },
   // Colors for layout
   colors: {
@@ -10,6 +11,8 @@ export default {
     text: "#fff",
     secondary: "#40376E",
     bubble: "#0F1624",
+    buttonShadow1: "black",
+    buttonShadow2: "#0c1925",
   },
   // Breakpoints for responsive design
   breakpoints: {

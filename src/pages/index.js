@@ -1,8 +1,9 @@
+import Hero from "../components/Hero/Hero";
 import { Layout } from "./../layout/Layout";
 const Home = () => {
   return (
     <Layout>
-      <h1>Hello World</h1>
+      <Hero />
     </Layout>
   );
 };
