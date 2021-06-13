@@ -6,7 +6,7 @@ import { data } from "./../../data/ProjectData";
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="projects">
       <SectionTitle data-text="PROJECTS">Projects</SectionTitle>
       <SectionBody>
         {data.map((project, i) => (

@@ -5,7 +5,7 @@ import SkillLabel from "./../SkillLabel/SkillLabel";
 
 const Skills = () => {
   return (
-    <Section>
+    <Section id="skills">
       <SectionTitle data-text="SKILLS">Skills</SectionTitle>
       <SectionBody>
         <p>
