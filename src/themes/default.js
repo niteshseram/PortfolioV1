@@ -15,6 +15,7 @@ export default {
     buttonColor: "#052541",
     buttonShadow1: "#03080C",
     buttonShadow2: "#0d1924",
+    footer: "#03090f",
   },
   // Breakpoints for responsive design
   breakpoints: {
