@@ -28,4 +28,8 @@ export const SocialLinks = styled.div`
       transition: all 0.3 ease-in;
     }
   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 40%;
+  }
 `;

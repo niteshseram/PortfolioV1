@@ -8,7 +8,7 @@ export const Button = styled.a`
   font-size: 1.8rem;
   width: 200px;
   height: 80px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   border-radius: 10px;
   background-color: ${(props) => props.theme.colors.buttonColor};
   box-shadow: 9px 9px 16px ${(props) => props.theme.colors.buttonShadow1},
