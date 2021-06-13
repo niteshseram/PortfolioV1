@@ -6,13 +6,26 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  p {
+    font-size: 2rem;
+    color: ${(props) => props.theme.colors.paraText};
+    margin-bottom: 20px;
+    line-height: 2.8rem;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    p {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      margin-bottom: 15px;
+    }
+  }
 `;
 
 export const SectionTitle = styled.h1`
   font-size: 6rem;
   position: relative;
   &:after {
-    content: "ABOUT";
+    content: attr(data-text);
     position: absolute;
     font-size: 10rem;
     left: 50%;
@@ -24,6 +37,14 @@ export const SectionTitle = styled.h1`
     font-weight: 800;
     text-shadow: 1px 1px 3px ${(props) => props.theme.colors.buttonShadow2},
       -1px -1px 3px ${(props) => props.theme.colors.buttonShadow1};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 3.5rem;
+
+    &:after {
+      font-size: 5rem;
+    }
   }
 `;
 

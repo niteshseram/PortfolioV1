@@ -10,7 +10,7 @@ import { SectionBody, LeftSection, RightSection } from "./IntroStyles";
 const Intro = () => {
   return (
     <Section>
-      <SectionTitle>About</SectionTitle>
+      <SectionTitle data-text="ABOUT">About</SectionTitle>
       <SectionBody>
         <LeftSection>
           <p>
