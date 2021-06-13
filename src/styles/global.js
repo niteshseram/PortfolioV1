@@ -28,6 +28,18 @@ const GlobalStyles = createGlobalStyle`
   li{
     list-style: none;
   }
+  ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: ${(props) => props.theme.colors.footer};
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: ${(props) => props.theme.colors.secondary};
+  border-radius: 25px;
+}
 `;
 
 export default GlobalStyles;
