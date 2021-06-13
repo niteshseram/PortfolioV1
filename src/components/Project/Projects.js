@@ -2,104 +2,69 @@ import React from "react";
 import { Section, SectionTitle } from "./../../styles/GlobalComponents/index";
 import { SectionBody, ProjectContainer } from "./ProjectsStyles";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { data } from "./../../data/ProjectData";
 
 const Projects = () => {
   return (
     <Section>
       <SectionTitle data-text="PROJECTS">Projects</SectionTitle>
       <SectionBody>
-        <ProjectContainer>
-          <div className="project-content">
-            <div>
-              <h3 className="project-title">
-                <a href={"#"}>Booksify</a>
-              </h3>
-
-              <div
-                className="project-description"
-                dangerouslySetInnerHTML={{
-                  __html:
-                    "Booksify is a online book store where you can buy your favorite books. It is built using MERN stack and Redux with paypal payment gateway",
-                }}
-              />
-
-              {true && (
-                <ul className="project-tech-list">
-                  <li>Java</li>
-                  <li>Java</li>
-                  <li>Java</li>
-                  <li>Java</li>
-                </ul>
-              )}
-
-              <div className="project-links">
-                {true && (
-                  <a href={"#"} aria-label="GitHub Link">
-                    <FaGithub />
+        {data.map((project, i) => (
+          <ProjectContainer key={i}>
+            <div className="project-content">
+              <div>
+                <h3 className="project-title">
+                  <a href={project.external} target="_blank">
+                    {project.title}
                   </a>
-                )}
+                </h3>
+
+                <div
+                  className="project-description"
+                  dangerouslySetInnerHTML={{
+                    __html: project.description,
+                  }}
+                />
+
                 {true && (
-                  <a href={"#"} aria-label="External Link" className="external">
-                    <FaExternalLinkAlt />
-                  </a>
+                  <ul className="project-tech-list">
+                    {project.tech.map((tech, i) => (
+                      <li key={i}>{tech}</li>
+                    ))}
+                  </ul>
                 )}
+
+                <div className="project-links">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      aria-label="GitHub Link"
+                      target="_blank"
+                    >
+                      <FaGithub />
+                    </a>
+                  )}
+                  {project.external && (
+                    <a
+                      href={project.external}
+                      target="_blank"
+                      aria-label="External Link"
+                      className="external"
+                    >
+                      <FaExternalLinkAlt />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="project-image">
-            <a href={"#"}>
-              <img src="../../images/projects/booksify.JPG" className="img" />
-            </a>
-          </div>
-        </ProjectContainer>
-        <ProjectContainer>
-          <div className="project-content">
-            <div>
-              <h3 className="project-title">
-                <a href={"#"}>Booksify</a>
-              </h3>
-
-              <div
-                className="project-description"
-                dangerouslySetInnerHTML={{
-                  __html:
-                    "Booksify is a online book store where you can buy your favorite books. It is built using MERN stack and Redux with paypal payment gateway",
-                }}
-              />
-
-              {true && (
-                <ul className="project-tech-list">
-                  <li>Java</li>
-                  <li>Java</li>
-                  <li>Java</li>
-                  <li>Java</li>
-                </ul>
-              )}
-
-              <div className="project-links">
-                {true && (
-                  <a href={"#"} aria-label="GitHub Link">
-                    {/* <Icon name="GitHub" /> */}
-                    Github
-                  </a>
-                )}
-                {true && (
-                  <a href={"#"} aria-label="External Link" className="external">
-                    {/* <Icon name="External" /> */}
-                    External
-                  </a>
-                )}
-              </div>
+            <div className="project-image">
+              <a href={project.external} target="_blank">
+                <img src={project.image} className="img" />
+              </a>
             </div>
-          </div>
-
-          <div className="project-image">
-            <a href={"#"}>
-              <img src="../../images/projects/booksify.JPG" className="img" />
-            </a>
-          </div>
-        </ProjectContainer>
+          </ProjectContainer>
+        ))}
       </SectionBody>
     </Section>
   );

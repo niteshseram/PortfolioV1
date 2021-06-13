@@ -7,7 +7,9 @@ export const ProjectContainer = styled.li`
   grid-gap: 10px;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-
+  a {
+    color: ${(props) => props.theme.colors.secondary};
+  }
   &:last-of-type {
     margin-bottom: 30px;
   }
@@ -175,6 +177,13 @@ export const ProjectContainer = styled.li`
         color: white;
         width: 20px;
         height: 20px;
+        transition: all 0.3s ease-out;
+      }
+      &:hover {
+        svg {
+          color: ${(props) => props.theme.colors.secondary};
+          transition: all 0.3s ease-in;
+        }
       }
     }
   }
