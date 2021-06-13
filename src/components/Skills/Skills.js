@@ -24,6 +24,9 @@ const Skills = () => {
           <SkillLabel url="../../images/logos/sql.png" name="MySQL" />
           <SkillLabel url="../../images/logos/docker.png" name="Docker" />
           <SkillLabel url="../../images/logos/k8s.png" name="Kubernetes" />
+          <SkillLabel url="../../images/logos/ts.png" name="TypeScript" />
+          <SkillLabel url="../../images/logos/aws.png" name="AWS" />
+          <SkillLabel url="../../images/logos/ci.png" name="CI/CD" />
         </SkillContainer>
       </SectionBody>
     </Section>
