@@ -3,6 +3,7 @@ import {
   Section,
   SectionTitle,
   ImgLink,
+  TextColor,
 } from "./../../styles/GlobalComponents/index";
 import { SectionBody, LeftSection, RightSection } from "./IntroStyles";
 
@@ -13,9 +14,10 @@ const Intro = () => {
       <SectionBody>
         <LeftSection>
           <p>
-            Hello!, My name is Seram Nitesh Singh. I am a software developer and
-            also open source enthusiast. I have graduated in Computer Science
-            Engineering from Assam Don Bosco University in the year 2020.
+            Hello! My name is <TextColor>Seram Nitesh Singh</TextColor>. I am a
+            software developer and also <TextColor>Open Source</TextColor>{" "}
+            enthusiast. I have graduated in Computer Science Engineering from
+            Assam Don Bosco University in the year 2020.
           </p>
 
           <p>
