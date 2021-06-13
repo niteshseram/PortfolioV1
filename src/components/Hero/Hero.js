@@ -20,7 +20,9 @@ const Hero = () => {
         <HeroText>Hey there, I am</HeroText>
         <HeroName>Nitesh Seram</HeroName>
         <HeroProfession>Software Developer</HeroProfession>
-        <Button>Get Resume</Button>
+        <Button href="../../resume.pdf" target="_blank">
+          Get Resume
+        </Button>
       </LeftSection>
     </Section>
   );
