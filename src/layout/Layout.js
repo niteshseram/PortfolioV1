@@ -9,8 +9,8 @@ export const Layout = ({ children }) => {
       <Container>
         <Header />
         <MainContainer>{children}</MainContainer>
+        <Footer />
       </Container>
-      <Footer />
     </>
   );
 };
