@@ -34,5 +34,3 @@ export const LoadingCircle = styled.div`
   animation: ${rot} 2s linear infinite;
   position: relative;
 `;
-
-export const LoaderImg = styled.img``;
