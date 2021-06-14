@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: ${(props) => props.theme.colors.footer}; */
+  background-color: ${(props) => props.theme.colors.footer};
   p {
     margin-bottom: 10px;
   }
