@@ -1,4 +1,4 @@
-export const LoaderSvg = () => (
+export const LogoSvg = () => (
   <svg
     version="1.1"
     id="Layer_1"

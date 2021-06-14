@@ -14,16 +14,16 @@ export const HeaderContainer = styled.header`
   @media ${(props) => props.theme.breakpoints.xs} {
     padding: 0 10px;
   }
-`;
 
-export const Brand = styled.img`
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  &:hover {
-    transform: scale(1.2);
-    transition: all 0.3s ease-in;
+  svg {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.3s ease-in;
+    }
   }
 `;
 

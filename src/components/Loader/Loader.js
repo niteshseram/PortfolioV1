@@ -1,12 +1,12 @@
 import React from "react";
-import { LoaderContainer, LoaderImg, LoadingCircle } from "./LoaderStyles";
-import { LoaderSvg } from "./LoaderSvg";
+import { LogoSvg } from "../LogoSvg";
+import { LoaderContainer, LoadingCircle } from "./LoaderStyles";
 
 const Loader = () => {
   return (
     <LoaderContainer>
       <LoadingCircle />
-      <LoaderSvg />
+      <LogoSvg />
     </LoaderContainer>
   );
 };
