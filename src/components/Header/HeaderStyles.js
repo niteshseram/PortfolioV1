@@ -16,6 +16,17 @@ export const HeaderContainer = styled.header`
   }
 `;
 
+export const Brand = styled.img`
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+  }
+`;
+
 export const NavContainer = styled.nav`
   display: flex;
   align-items: center;

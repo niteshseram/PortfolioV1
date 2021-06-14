@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import {
   HeaderContainer,
+  Brand,
   NavContainer,
   NavLink,
   Hamburger,
@@ -17,7 +18,9 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <h3>Nitesh</h3>
+      <Link href="/">
+        <Brand src="../../images/logo.png" />
+      </Link>
       <NavContainer open={open}>
         <HamburgerContainer onClick={HamburgerBubble}>
           <Hamburger open={open} />
