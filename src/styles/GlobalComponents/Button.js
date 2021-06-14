@@ -11,8 +11,8 @@ export const Button = styled.a`
   /* margin-right: 20px; */
   border-radius: 10px;
   background-color: ${(props) => props.theme.colors.buttonColor};
-  box-shadow: 9px 9px 16px ${(props) => props.theme.colors.buttonShadow1},
-    -9px -9px 16px ${(props) => props.theme.colors.buttonShadow2};
+  box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
+    -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
   cursor: pointer;
   border: none;
   transition: all 1s linear;
@@ -31,13 +31,6 @@ export const Button = styled.a`
     width: 150px;
     height: 50px;
 
-    box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
-      -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
-
-    &:hover {
-      box-shadow: inset 5px 5px 16px
-          ${(props) => props.theme.colors.buttonShadow1},
-        inset -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
-    }
+    box-shadow: none;
   }
 `;

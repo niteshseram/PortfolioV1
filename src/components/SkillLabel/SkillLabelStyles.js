@@ -15,8 +15,8 @@ export const SkillLabelContainer = styled.div`
     margin: 0;
   }
 
-  box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
-    -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
+  box-shadow: 3px 3px 10px ${(props) => props.theme.colors.buttonShadow1},
+    -3px -3px 10px ${(props) => props.theme.colors.buttonShadow2};
 
   @media ${(props) => props.theme.breakpoints.sm} {
     img {
@@ -24,5 +24,6 @@ export const SkillLabelContainer = styled.div`
       height: 25px;
       margin: 0px 5px;
     }
+    box-shadow: none;
   }
 `;

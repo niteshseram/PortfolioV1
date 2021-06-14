@@ -102,7 +102,7 @@ export const ProjectContainer = styled.li`
     }
     @media (max-width: 768px) {
       a {
-        color: #b8b8b8;
+        /* color: #b8b8b8; */
         position: static;
         &:before {
           content: "";
@@ -124,7 +124,7 @@ export const ProjectContainer = styled.li`
     border-radius: 5px;
     background-color: ${(props) => props.theme.colors.buttonColor};
     font-size: 1.8rem;
-    box-shadow: 5px 5px 10px ${(props) => props.theme.colors.buttonShadow2};
+    box-shadow: 5px 5px 10px ${(props) => props.theme.colors.buttonShadow1};
     @media (max-width: 768px) {
       padding: 20px 0;
       background-color: transparent;

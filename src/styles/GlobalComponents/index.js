@@ -24,6 +24,8 @@ export const Section = styled.section`
 export const SectionTitle = styled.h1`
   font-size: 6rem;
   position: relative;
+  margin-bottom: 10rem;
+
   &:after {
     content: attr(data-text);
     position: absolute;
@@ -33,7 +35,7 @@ export const SectionTitle = styled.h1`
     transform: translateX(-50%);
     color: transparent;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.8;
     font-weight: 800;
     text-shadow: 1px 1px 3px ${(props) => props.theme.colors.buttonShadow2},
       -1px -1px 3px ${(props) => props.theme.colors.buttonShadow1};
@@ -44,6 +46,8 @@ export const SectionTitle = styled.h1`
 
     &:after {
       font-size: 5rem;
+      color: ${(props) => props.theme.colors.buttonShadow2};
+      text-shadow: none;
     }
   }
 `;
@@ -52,8 +56,9 @@ export const ImgLink = styled.img`
   width: 400px;
   height: 400px;
   border-radius: 100%;
-  box-shadow: 20px 20px 16px ${(props) => props.theme.colors.buttonShadow1},
-    -20px -20px 16px ${(props) => props.theme.colors.buttonShadow2};
+  border: 0px;
+  box-shadow: 10px 10px 16px ${(props) => props.theme.colors.buttonShadow1},
+    -10px -10px 16px ${(props) => props.theme.colors.buttonShadow2};
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 300px;
