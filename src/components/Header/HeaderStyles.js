@@ -7,6 +7,13 @@ export const HeaderContainer = styled.header`
   align-items: center;
   flex-wrap: wrap;
   height: 10vh;
+  padding: 0px 50px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    padding: 0 10px;
+  }
 `;
 
 export const NavContainer = styled.nav`

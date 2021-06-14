@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
+  padding: 0px 50px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    padding: 0 10px;
+  }
   height: 12vh;
   display: flex;
   align-items: center;
