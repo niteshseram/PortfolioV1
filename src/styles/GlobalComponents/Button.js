@@ -32,5 +32,9 @@ export const Button = styled.a`
     height: 50px;
 
     box-shadow: none;
+
+    &:hover {
+      box-shadow: none;
+    }
   }
 `;

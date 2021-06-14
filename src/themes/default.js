@@ -12,9 +12,9 @@ export default {
     paraText: "#FFFFFF80",
     secondary: "#0096c7",
     bubble: "#0F1624",
-    buttonColor: "#08084e",
+    buttonColor: "#3C096C",
     buttonShadow1: "black",
-    buttonShadow2: "#2e2f84",
+    buttonShadow2: "#49127c",
     footer: "#03090f",
   },
   // Breakpoints for responsive design
