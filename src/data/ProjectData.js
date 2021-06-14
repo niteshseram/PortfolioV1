@@ -21,7 +21,7 @@ export const data = [
     title: "Covid19 Tracker",
     description:
       "Covid19 Tracker helps us in tracking the number of corona cases world wide and representing the data with graph and map. It can also filter the number of cases based on country. It is using Disease.sh API for fetching the data.",
-    tech: ["ReactJS", "Spring Boot", "HSQLDatabase"],
+    tech: ["ReactJS"],
     github: "https://github.com/niteshseram/covid19-tracker/tree/master",
     external: "https://niteshseram.in/covid19-tracker",
     image: "../../images/projects/covid.JPG",
