@@ -10,6 +10,7 @@ export const SkillContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+  padding-bottom: 40px;
   @media ${(props) => props.theme.breakpoints.md} {
     grid-template-columns: repeat(2, 1fr);
   }

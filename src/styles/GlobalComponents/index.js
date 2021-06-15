@@ -43,7 +43,7 @@ export const SectionTitle = styled.h1`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 3.5rem;
-
+    margin-bottom: 5rem;
     &:after {
       font-size: 5rem;
       color: ${(props) => props.theme.colors.buttonShadow2};
