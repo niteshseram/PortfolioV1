@@ -32,6 +32,17 @@ export const HeaderContainer = styled.header`
   }
 `;
 
+export const Brand = styled.img`
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s ease-out;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+  }
+`;
+
 export const NavContainer = styled.nav`
   display: flex;
   align-items: center;

@@ -6,15 +6,15 @@ export const LoaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
 
-  svg {
-    width: 150px;
-    height: 150px;
-    padding: 30px;
-    border-radius: 50%;
-    position: absolute;
-    color: red;
-  }
+export const LoaderSvg = styled.img`
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  border-radius: 50%;
+  position: absolute;
+  color: red;
 `;
 
 const rot = keyframes`
