@@ -9,8 +9,18 @@ import {
 } from "./HeroStyles";
 import { Button } from "./../../styles/GlobalComponents/Button";
 import { ImgLink } from "./../../styles/GlobalComponents/index";
+import * as gtag from "../../lib/gtag";
 
 const Hero = () => {
+  const getResumeEvent = () => {
+    gtag.event({
+      action: "get_resume",
+      category: "Portfolio",
+      label: "Get Resume",
+      value: "",
+    });
+  };
+
   return (
     <Section>
       <ProfileImgContainer>
@@ -20,7 +30,11 @@ const Hero = () => {
         <HeroText>Hey there, I am</HeroText>
         <HeroName>Nitesh Seram</HeroName>
         <HeroProfession>Software Developer</HeroProfession>
-        <Button href="../../resume.pdf" target="_blank">
+        <Button
+          href="../../resume.pdf"
+          target="_blank"
+          onClick={() => getResumeEvent()}
+        >
           Get Resume
         </Button>
       </LeftSection>
