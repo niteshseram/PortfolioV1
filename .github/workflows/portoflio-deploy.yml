@@ -28,6 +28,7 @@ jobs:
     - run: npm ci
     - run: npm run build
     - run: npm run export
+    - env: NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.4
