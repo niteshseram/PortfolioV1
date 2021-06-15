@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   margin: auto;
-  transition: all 10s ease-in;
 `;
 export const MainContainer = styled.div`
   padding: 0px 50px;
