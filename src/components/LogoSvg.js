@@ -7,7 +7,7 @@ export const LogoSvg = () => (
     width="1239px"
     height="1239px"
     viewBox="0 0 1239 1239"
-    enable-background="new 0 0 1239 1239"
+    enableBackground="new 0 0 1239 1239"
   >
     {" "}
     <image

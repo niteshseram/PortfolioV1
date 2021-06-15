@@ -8,6 +8,11 @@ export const HeaderContainer = styled.header`
   flex-wrap: wrap;
   height: 10vh;
   padding: 0px 50px;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0 20px;
   }

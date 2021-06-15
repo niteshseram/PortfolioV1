@@ -19,9 +19,9 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <Link href="/">
+      <a href="/">
         <LogoSvg />
-      </Link>
+      </a>
       <NavContainer open={open}>
         <HamburgerContainer onClick={HamburgerBubble}>
           <Hamburger open={open} />
