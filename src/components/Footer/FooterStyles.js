@@ -16,6 +16,11 @@ export const FooterContainer = styled.footer`
   background-color: ${(props) => props.theme.colors.footer};
   p {
     margin-bottom: 10px;
+    font-family: ${(props) => props.theme.fonts.fira};
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+      font-size: 1.4rem;
+    }
   }
 `;
 

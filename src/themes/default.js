@@ -8,11 +8,11 @@ export default {
   // Colors for layout
   colors: {
     bg: "#07111A",
-    text: "#FFF",
-    paraText: "#FFFFFF80",
+    primary: "#3C096C",
     secondary: "#0096c7",
+    text: "#FFF",
+    paraText: "#afa3a3",
     bubble: "#0F1624",
-    buttonColor: "#3C096C",
     buttonShadow1: "black",
     buttonShadow2: "#49127c",
     footer: "#03090f",

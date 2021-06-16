@@ -101,7 +101,6 @@ export const NavContainer = styled.nav`
 export const NavLink = styled.a`
   line-height: 32px;
   transition: all 0.1s ease-in;
-  color: "#FFFFBF";
   text-transform: uppercase;
 `;
 

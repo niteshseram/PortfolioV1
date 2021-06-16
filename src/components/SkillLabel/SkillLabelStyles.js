@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillLabelContainer = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.buttonColor};
+  background-color: ${(props) => props.theme.colors.primary};
   padding: 10px 10px;
   border-radius: 5px;
   /* img {

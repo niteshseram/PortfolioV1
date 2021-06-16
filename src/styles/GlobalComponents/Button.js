@@ -10,7 +10,7 @@ export const Button = styled.a`
   height: 80px;
   /* margin-right: 20px; */
   border-radius: 10px;
-  background-color: ${(props) => props.theme.colors.buttonColor};
+  background-color: ${(props) => props.theme.colors.primary};
   box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
     -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
   cursor: pointer;
