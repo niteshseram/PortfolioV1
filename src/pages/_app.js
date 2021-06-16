@@ -30,12 +30,12 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Meta />
       <Theme>
         {loading ? (
           <Loader />
         ) : (
           <>
-            <Meta />
             <Component {...pageProps} />
           </>
         )}
