@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <a href="/">
-        <Image src="/logo.svg" width={40} height={40} alt="Logo" />
+        <Image src="/images/logo.svg" width={40} height={40} alt="Logo" />
       </a>
       <NavContainer open={open}>
         <HamburgerContainer onClick={HamburgerBubble}>
