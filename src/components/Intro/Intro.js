@@ -35,7 +35,7 @@ const Intro = () => {
           </p>
         </LeftSection>
         <RightSection>
-          <Image src="/images/dp.png" width={400} height={400} />
+          <Image src="/dp.png" width={400} height={400} />
         </RightSection>
       </SectionBody>
     </Section>

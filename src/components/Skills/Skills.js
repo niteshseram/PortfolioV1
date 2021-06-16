@@ -14,19 +14,19 @@ const Skills = () => {
           might get the work done.
         </p>
         <SkillContainer>
-          <SkillLabel url="/images/logos/java.png" name="Java" />
-          <SkillLabel url="/images/logos/js.png" name="Javascript" />
-          <SkillLabel url="/images/logos/python.png" name="Python" />
-          <SkillLabel url="/images/logos/react.png" name="React" />
-          <SkillLabel url="/images/logos/node.png" name="Node" />
-          <SkillLabel url="/images/logos/spring.png" name="Spring" />
-          <SkillLabel url="/images/logos/mongo.png" name="MongoDB" />
-          <SkillLabel url="/images/logos/sql.png" name="MySQL" />
-          <SkillLabel url="/images/logos/docker.png" name="Docker" />
-          <SkillLabel url="/images/logos/k8s.png" name="Kubernetes" />
-          <SkillLabel url="/images/logos/ts.png" name="TypeScript" />
-          <SkillLabel url="/images/logos/aws.png" name="AWS" />
-          <SkillLabel url="/images/logos/ci.png" name="CI/CD" />
+          <SkillLabel url="/logos/java.png" name="Java" />
+          <SkillLabel url="/logos/js.png" name="Javascript" />
+          <SkillLabel url="/logos/python.png" name="Python" />
+          <SkillLabel url="/logos/react.png" name="React" />
+          <SkillLabel url="/logos/node.png" name="Node" />
+          <SkillLabel url="/logos/spring.png" name="Spring" />
+          <SkillLabel url="/logos/mongo.png" name="MongoDB" />
+          <SkillLabel url="/logos/sql.png" name="MySQL" />
+          <SkillLabel url="/logos/docker.png" name="Docker" />
+          <SkillLabel url="/logos/k8s.png" name="Kubernetes" />
+          <SkillLabel url="/logos/ts.png" name="TypeScript" />
+          <SkillLabel url="/logos/aws.png" name="AWS" />
+          <SkillLabel url="/logos/ci.png" name="CI/CD" />
         </SkillContainer>
       </SectionBody>
     </Section>
