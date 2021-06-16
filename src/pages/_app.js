@@ -1,8 +1,10 @@
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Loader from "../components/Loader/Loader";
 import Theme from "../styles/theme";
 import * as gtag from "../lib/gtag";
+import Meta from "../components/Meta";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -28,7 +30,16 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Theme>{loading ? <Loader /> : <Component {...pageProps} />}</Theme>
+      <Theme>
+        {loading ? (
+          <Loader />
+        ) : (
+          <>
+            <Meta />
+            <Component {...pageProps} />
+          </>
+        )}
+      </Theme>
     </>
   );
 }

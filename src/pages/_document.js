@@ -39,32 +39,13 @@ export default class MyDocument extends Document {
       image: "/images/og.PNG",
       twitter: "@niteshseram",
       ogDescription: "Visit my portfolio to know more about me and my projects",
+      keywords:
+        "Software Engineer, Software Developer, Web Developer, Full Stack Developer, India, MERN Stack, Website Design, Java Developer, Frontend, Backend, Freelancer",
     };
 
     return (
       <Html lang="en">
         <Head>
-          <title>{seo.title}</title>
-          <meta name="description" content={seo.description} />
-          <meta name="image" content={seo.image} />
-
-          <meta property="og:title" content={seo.title} />
-          <meta property="og:description" content={seo.description} />
-          <meta property="og:image" content={seo.image} />
-          <meta property="og:url" content={seo.url} />
-          <meta property="og:type" content="website" />
-          <meta property="og:site_name" content={seo.title} />
-
-          <meta name="twitter:title" content={seo.title} />
-          <meta name="twitter:description" content={seo.description} />
-          <meta name="twitter:image" content={seo.image} />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:image:alt" content="Nitesh Seram's Portfolio" />
-
-          <meta charSet="utf-8" />
-          <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <link rel="canonical" href={seo.url} />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
