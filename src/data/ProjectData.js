@@ -6,7 +6,7 @@ export const data = [
     tech: ["ReactJS", "NodeJS", "Express", "MongoDB"],
     github: "https://github.com/niteshseram/Booksify",
     external: "https://booksify.herokuapp.com",
-    image: "../../images/projects/booksify.JPG",
+    image: "/images/projects/booksify.JPG",
   },
   {
     title: "IPL Dashboard",
@@ -15,7 +15,7 @@ export const data = [
     tech: ["ReactJS", "Spring Boot", "HSQLDatabase"],
     github: "https://github.com/niteshseram/IPLDashboard",
     external: "https://niteshseram.in/IPLDashboard/#/",
-    image: "../../images/projects/ipl.JPG",
+    image: "/images/projects/ipl.JPG",
   },
   {
     title: "Covid19 Tracker",
@@ -24,6 +24,6 @@ export const data = [
     tech: ["ReactJS"],
     github: "https://github.com/niteshseram/covid19-tracker/tree/master",
     external: "https://niteshseram.in/covid19-tracker",
-    image: "../../images/projects/covid.JPG",
+    image: "/images/projects/covid.JPG",
   },
 ];

@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
   flex-wrap: wrap;
   height: 10vh;
   padding: 0px 50px;
+
   a {
     display: flex;
     align-items: center;
@@ -29,17 +30,6 @@ export const HeaderContainer = styled.header`
       transform: scale(1.2);
       transition: all 0.3s ease-in;
     }
-  }
-`;
-
-export const Brand = styled.img`
-  width: 40px;
-  height: 40px;
-  transition: all 0.4s ease-out;
-
-  &:hover {
-    transform: scale(1.2);
-    transition: all 0.3s ease-in;
   }
 `;
 

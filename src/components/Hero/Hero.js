@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   Section,
   LeftSection,
@@ -8,7 +9,6 @@ import {
   HeroProfession,
 } from "./HeroStyles";
 import { Button } from "./../../styles/GlobalComponents/Button";
-import { ImgLink } from "./../../styles/GlobalComponents/index";
 import * as gtag from "../../lib/gtag";
 
 const Hero = () => {
@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <Section>
       <ProfileImgContainer>
-        <ImgLink src="../../images/dp.png" />
+        <Image src="/images/dp.png" width={200} height={200} />
       </ProfileImgContainer>
       <LeftSection>
         <HeroText>Hey there, I am</HeroText>

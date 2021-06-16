@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   HeaderContainer,
   Brand,
@@ -19,7 +20,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <a href="/">
-        <Brand src="/logo.svg" />
+        <Image src="/logo.svg" width={40} height={40} alt="Logo" />
       </a>
       <NavContainer open={open}>
         <HamburgerContainer onClick={HamburgerBubble}>

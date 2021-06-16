@@ -36,7 +36,7 @@ export const SectionTitle = styled.h1`
     color: transparent;
     z-index: -1;
     opacity: 0.8;
-    font-weight: 800;
+    font-weight: 700;
     text-shadow: 1px 1px 3px ${(props) => props.theme.colors.buttonShadow2},
       -1px -1px 3px ${(props) => props.theme.colors.buttonShadow1};
   }
@@ -49,26 +49,6 @@ export const SectionTitle = styled.h1`
       color: ${(props) => props.theme.colors.buttonShadow2};
       text-shadow: none;
     }
-  }
-`;
-
-export const ImgLink = styled.img`
-  width: 400px;
-  height: 400px;
-  border-radius: 100%;
-  border: 0px;
-  box-shadow: 10px 10px 16px ${(props) => props.theme.colors.buttonShadow1},
-    -10px -10px 16px ${(props) => props.theme.colors.buttonShadow2};
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 300px;
-    height: 300px;
-    box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
-      -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 200px;
-    height: 200px;
   }
 `;
 

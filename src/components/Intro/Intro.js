@@ -1,8 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import {
   Section,
   SectionTitle,
-  ImgLink,
   TextColor,
 } from "./../../styles/GlobalComponents/index";
 import { SectionBody, LeftSection, RightSection } from "./IntroStyles";
@@ -35,7 +35,7 @@ const Intro = () => {
           </p>
         </LeftSection>
         <RightSection>
-          <ImgLink src="../../images/dp.png" />
+          <Image src="/images/dp.png" width={400} height={400} />
         </RightSection>
       </SectionBody>
     </Section>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Section, SectionTitle } from "./../../styles/GlobalComponents/index";
 import { SectionBody, ProjectContainer } from "./ProjectsStyles";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -60,7 +61,12 @@ const Projects = () => {
 
             <div className="project-image">
               <a href={project.external} target="_blank">
-                <img src={project.image} className="img" />
+                <Image
+                  src={project.image}
+                  className="img"
+                  width={1800}
+                  height={900}
+                />
               </a>
             </div>
           </ProjectContainer>

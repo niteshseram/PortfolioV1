@@ -1,11 +1,12 @@
 import React from "react";
-import { LoaderContainer, LoadingCircle, LoaderSvg } from "./LoaderStyles";
+import Image from "next/image";
+import { LoaderContainer, LoadingCircle } from "./LoaderStyles";
 
 const Loader = () => {
   return (
     <LoaderContainer>
       <LoadingCircle />
-      <LoaderSvg src="/logo.svg" />
+      <Image src="/logo.svg" width={70} height={70} />
     </LoaderContainer>
   );
 };

@@ -65,6 +65,9 @@ export const ProjectContainer = styled.li`
       grid-column: 1 / 8;
       @media (max-width: 768px) {
         grid-column: 1 / -1;
+        div > img {
+          height: 400px;
+        }
       }
     }
   }
@@ -192,7 +195,7 @@ export const ProjectContainer = styled.li`
     grid-row: 1 / -1;
     position: relative;
     .img {
-      max-width: 100%;
+      max-width: 100% !important;
     }
     z-index: 1;
     @media (max-width: 768px) {
@@ -211,8 +214,8 @@ export const ProjectContainer = styled.li`
         outline: 0;
         &:before,
         .img {
-          background: transparent;
-          filter: none;
+          background: transparent !important;
+          filter: none !important;
         }
       }
       &:before {
@@ -235,9 +238,9 @@ export const ProjectContainer = styled.li`
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1) brightness(90%);
       @media (max-width: 768px) {
-        object-fit: cover;
-        width: auto;
-        height: 400px;
+        object-fit: cover !important;
+        width: auto !important;
+        height: 400px !important;
       }
     }
   }

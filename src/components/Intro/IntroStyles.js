@@ -22,4 +22,22 @@ export const RightSection = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
   }
+
+  div {
+    width: 400px !important;
+    height: 400px !important;
+    border-radius: 50%;
+    box-shadow: 10px 10px 16px ${(props) => props.theme.colors.buttonShadow1},
+      -10px -10px 16px ${(props) => props.theme.colors.buttonShadow2};
+    @media ${(props) => props.theme.breakpoints.md} {
+      width: 300px !important;
+      height: 300px !important;
+      box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
+        -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
+    }
+    @media ${(props) => props.theme.breakpoints.sm} {
+      width: 200px !important;
+      height: 200px !important;
+    }
+  }
 `;

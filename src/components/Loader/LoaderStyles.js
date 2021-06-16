@@ -1,20 +1,26 @@
 import styled, { keyframes } from "styled-components";
 
+const fadeAndScale = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
+
 export const LoaderContainer = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-export const LoaderSvg = styled.img`
-  width: 150px;
-  height: 150px;
-  padding: 30px;
-  border-radius: 50%;
-  position: absolute;
-  color: red;
+  img {
+    padding: 30px !important;
+    animation: ${fadeAndScale} 1s linear;
+  }
 `;
 
 const rot = keyframes`
@@ -32,5 +38,5 @@ export const LoadingCircle = styled.div`
   border-radius: 50%;
   border-right: 0.3rem solid ${(props) => props.theme.colors.secondary};
   animation: ${rot} 2s linear infinite;
-  position: relative;
+  position: absolute;
 `;
