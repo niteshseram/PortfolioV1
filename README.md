@@ -47,4 +47,4 @@ npm run dev
 
 ## License & copyright
 
-Licensed under [GNU GPLv3](LICENSE)
+Read the [license](LICENSE) before using it
