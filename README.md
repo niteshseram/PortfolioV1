@@ -44,3 +44,7 @@ npm i install
 # Starting the local server
 npm run dev
 ```
+
+## License & copyright
+
+Licensed under [MIT License](LICENSE)
