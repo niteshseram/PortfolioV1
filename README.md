@@ -5,7 +5,7 @@
   niteshseram.in
 </h1>
 <p align="center">
-  This is my personal <a href="https://brittanychiang.com" target="_blank">portfolio</a> built with <a href="https://nextjs.org/" target="_blank">NextJs</a> and hosted with github pages.
+  This is my personal <a href="https://niteshseram.in" target="_blank">portfolio</a> built with <a href="https://nextjs.org/" target="_blank">NextJs</a> and hosted with Vercel.
 </p>
 <p align="center">
   <a href="https://github.com/niteshseram/niteshseram.github.io/actions/workflows/portoflio-deploy.yml" target="_blank">
