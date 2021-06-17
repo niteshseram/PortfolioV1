@@ -24,7 +24,12 @@ const Hero = () => {
   return (
     <Section>
       <ProfileImgContainer>
-        <Image src="/images/dp.png" width={200} height={200} />
+        <Image
+          src="/images/dp.png"
+          width={200}
+          height={200}
+          alt="Profile Picture"
+        />
       </ProfileImgContainer>
       <LeftSection>
         <HeroText>Hey there, I am</HeroText>

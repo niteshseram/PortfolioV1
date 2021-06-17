@@ -66,6 +66,7 @@ const Projects = () => {
                   className="img"
                   width={1800}
                   height={900}
+                  alt={project.title}
                 />
               </a>
             </div>
