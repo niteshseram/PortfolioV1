@@ -5,12 +5,7 @@
   niteshseram.in
 </h1>
 <p align="center">
-  This is my personal <a href="https://niteshseram.in" target="_blank">portfolio</a> built with <a href="https://nextjs.org/" target="_blank">NextJs</a> and hosted with Vercel.
-</p>
-<p align="center">
-  <a href="https://github.com/niteshseram/niteshseram.github.io/actions/workflows/portoflio-deploy.yml" target="_blank">
-    <img src="https://github.com/niteshseram/niteshseram.github.io/actions/workflows/portoflio-deploy.yml/badge.svg" alt="Github Action Status" />
-  </a>
+  This is my personal <a href="https://niteshseram.in" target="_blank">portfolio</a> built with <a href="https://nextjs.org/" target="_blank">NextJs</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>.
 </p>
 <p align="center">
 <img src="https://raw.githubusercontent.com/niteshseram/niteshseram.github.io/main/public/images/og.PNG"  alt="Demo"/>
