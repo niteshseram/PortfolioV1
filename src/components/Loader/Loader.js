@@ -6,7 +6,13 @@ const Loader = () => {
   return (
     <LoaderContainer>
       <LoadingCircle />
-      <Image src="/images/logo.svg" width={70} height={70} priority={true} />
+      <Image
+        src="/images/logo.svg"
+        width={70}
+        height={70}
+        priority={true}
+        alt="Loader"
+      />
     </LoaderContainer>
   );
 };

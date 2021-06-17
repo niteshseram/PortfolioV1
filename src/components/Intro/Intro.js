@@ -35,7 +35,12 @@ const Intro = () => {
           </p>
         </LeftSection>
         <RightSection>
-          <Image src="/images/dp.png" width={400} height={400} />
+          <Image
+            src="/images/dp.png"
+            width={400}
+            height={400}
+            alt="Profile Picture"
+          />
         </RightSection>
       </SectionBody>
     </Section>

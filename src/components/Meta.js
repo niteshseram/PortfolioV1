@@ -4,6 +4,7 @@ import { SEO } from "../data/config";
 const Meta = () => (
   <Head>
     <title>{SEO.title}</title>
+    <meta name="robots" content="follow, index" />
     <meta name="description" content={SEO.description} />
     <meta name="image" content={SEO.image} />
 
@@ -19,6 +20,7 @@ const Meta = () => (
     <meta name="twitter:image" content={SEO.image} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image:alt" content="Nitesh Seram's Portfolio" />
+    <meta name="twitter:site" content={SEO.twitter} />
     <meta name="keywords" content={SEO.keywords}></meta>
     <link rel="canonical" href={SEO.url} />
     <meta charSet="utf-8" />
