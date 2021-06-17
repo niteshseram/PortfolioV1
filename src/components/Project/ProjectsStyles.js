@@ -15,10 +15,10 @@ export const ProjectContainer = styled.li`
   }
   &:not(:last-of-type) {
     margin-bottom: 100px;
-    @media (max-width: 768px) {
+    @media ${(props) => props.theme.breakpoints.md} {
       margin-bottom: 70px;
     }
-    @media (max-width: 480px) {
+    @media ${(props) => props.theme.breakpoints.xs} {
       margin-bottom: 30px;
     }
   }
@@ -27,26 +27,26 @@ export const ProjectContainer = styled.li`
     .project-content {
       grid-column: 7 / -1;
       text-align: right;
-      @media (max-width: 1080px) {
+      @media ${(props) => props.theme.breakpoints.lg} {
         grid-column: 5 / -1;
       }
-      @media (max-width: 768px) {
+      @media ${(props) => props.theme.breakpoints.md} {
         grid-column: 1 / -1;
         padding: 40px 40px 30px;
         text-align: left;
       }
-      @media (max-width: 480px) {
+      @media ${(props) => props.theme.breakpoints.xs} {
         padding: 25px 25px 20px;
       }
     }
     .project-tech-list {
       justify-content: flex-end;
-      @media (max-width: 768px) {
+      @media ${(props) => props.theme.breakpoints.md} {
         justify-content: flex-start;
       }
       li {
         margin: 0 0 5px 20px;
-        @media (max-width: 768px) {
+        @media ${(props) => props.theme.breakpoints.md} {
           margin: 0 10px 5px 0;
         }
       }
@@ -55,7 +55,7 @@ export const ProjectContainer = styled.li`
       justify-content: flex-end;
       margin-left: 0;
       margin-right: -10px;
-      @media (max-width: 768px) {
+      @media ${(props) => props.theme.breakpoints.md} {
         justify-content: flex-start;
         margin-left: -10px;
         margin-right: 0;
@@ -63,7 +63,7 @@ export const ProjectContainer = styled.li`
     }
     .project-image {
       grid-column: 1 / 8;
-      @media (max-width: 768px) {
+      @media ${(props) => props.theme.breakpoints.md} {
         grid-column: 1 / -1;
         div > img {
           height: 400px;
@@ -78,7 +78,7 @@ export const ProjectContainer = styled.li`
     @media (max-width: 1080px) {
       grid-column: 1 / 9;
     }
-    @media (max-width: 768px) {
+    @media ${(props) => props.theme.breakpoints.md} {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -87,23 +87,16 @@ export const ProjectContainer = styled.li`
       padding: 40px 40px 30px;
       z-index: 5;
     }
-    @media (max-width: 480px) {
+    @media ${(props) => props.theme.breakpoints.xs} {
       padding: 30px 25px 20px;
     }
-  }
-  .project-overline {
-    margin: 10px 0;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
-    font-weight: 400;
   }
   .project-title {
     font-size: clamp(24px, 5vw, 28px);
     @media (min-width: 768px) {
       margin: 0 0 20px;
     }
-    @media (max-width: 768px) {
+    @media ${(props) => props.theme.breakpoints.md} {
       a {
         position: static;
         &:before {
@@ -127,10 +120,11 @@ export const ProjectContainer = styled.li`
     background-color: ${(props) => props.theme.colors.primary};
     font-size: 1.8rem;
     box-shadow: 5px 5px 10px ${(props) => props.theme.colors.buttonShadow1};
-    @media (max-width: 768px) {
+    @media ${(props) => props.theme.breakpoints.md} {
       padding: 20px 0;
       background-color: transparent;
       box-shadow: none;
+      font-size: 1.6rem;
       &:hover {
         box-shadow: none;
       }
@@ -150,10 +144,10 @@ export const ProjectContainer = styled.li`
     li {
       margin: 0 20px 5px 0;
       font-family: ${(props) => props.theme.fonts.fira};
-      font-size: var(--fz-xs);
+      font-size: 1.5rem;
       white-space: nowrap;
     }
-    @media (max-width: 768px) {
+    @media ${(props) => props.theme.breakpoints.md} {
       margin: 10px 0;
       li {
         margin: 0 10px 5px 0;
@@ -197,7 +191,7 @@ export const ProjectContainer = styled.li`
       max-width: 100% !important;
     }
     z-index: 1;
-    @media (max-width: 768px) {
+    @media ${(props) => props.theme.breakpoints.md} {
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.25;
@@ -236,7 +230,7 @@ export const ProjectContainer = styled.li`
       border-radius: 5px;
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1) brightness(90%);
-      @media (max-width: 768px) {
+      @media ${(props) => props.theme.breakpoints.md} {
         object-fit: cover !important;
         width: auto !important;
         height: 400px !important;
