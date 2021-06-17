@@ -47,4 +47,4 @@ npm run dev
 
 ## License & copyright
 
-Licensed under [MIT License](LICENSE)
+Licensed under [GNU GPLv3](LICENSE)
