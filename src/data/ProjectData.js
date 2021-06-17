@@ -14,7 +14,7 @@ export const data = [
       "IPL Dashboard project allows you to browse your favorite IPL teams and access their past games details, wins and losses ratios- accessible by team and tournament year.",
     tech: ["ReactJS", "Spring Boot", "HSQLDatabase"],
     github: "https://github.com/niteshseram/IPLDashboard",
-    external: "https://niteshseram.in/IPLDashboard/#/",
+    external: "https://ipl-dashboard-97.netlify.app/#/",
     image: "/images/projects/ipl.JPG",
   },
   {
@@ -23,7 +23,7 @@ export const data = [
       "Covid19 Tracker helps us in tracking the number of corona cases world wide and representing the data with graph and map. It can also filter the number of cases based on country. It is using Disease.sh API for fetching the data.",
     tech: ["ReactJS"],
     github: "https://github.com/niteshseram/covid19-tracker/tree/master",
-    external: "https://niteshseram.in/covid19-tracker",
+    external: "https://niteshseram.github.io/covid19-tracker/",
     image: "/images/projects/covid.JPG",
   },
 ];
