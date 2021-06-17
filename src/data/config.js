@@ -1,4 +1,4 @@
-export const SEO = {
+export const meta = {
   title: "Nitesh Seram | Software Developer",
   description:
     "Nitesh Seram is a software developer and also an open source enthusiast. He is passionate about software development and also love learning and exploring new technologies.",
