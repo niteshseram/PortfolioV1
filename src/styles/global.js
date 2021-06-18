@@ -29,11 +29,11 @@ const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
   ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: ${(props) => props.theme.footer};
+  background-color: ${(props) => props.theme.primary};
 }
 
 ::-webkit-scrollbar-thumb {

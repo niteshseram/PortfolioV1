@@ -52,6 +52,22 @@ export const SectionTitle = styled.h1`
   }
 `;
 
-export const TextColor = styled.span`
+export const TextHighlight = styled.span`
   color: ${(props) => props.theme.text.primary};
+  font-weight: 500;
+`;
+
+export const Toggle = styled.div`
+  border-radius: 50%;
+  background-color: ${(props) => props.theme.primary};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: ${(props) => props.theme.text.tertiary};
+  }
 `;

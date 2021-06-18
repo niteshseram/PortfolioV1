@@ -4,9 +4,9 @@ import Intro from "./../components/Intro/Intro";
 import Skills from "./../components/Skills/Skills";
 import Projects from "./../components/Project/Projects";
 import Contact from "./../components/Contact/Contact";
-const Home = () => {
+const Home = ({ darkMode }) => {
   return (
-    <Layout>
+    <Layout darkMode={darkMode}>
       <Hero />
       <Intro />
       <Skills />

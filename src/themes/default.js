@@ -12,6 +12,20 @@ const dark = {
   buttonShadow2: "#49127c",
   footer: "#03090f",
 };
+const light = {
+  bg: "#fff",
+  primary: "#3C096C",
+  secondary: "#0096c7",
+  text: {
+    primary: "#000",
+    secondary: "#424242",
+    tertiary: "#fff",
+  },
+  bubble: "#fff",
+  buttonShadow1: "#280549",
+  buttonShadow2: "#7f3ebc",
+  footer: "#787878",
+};
 
 const defaultTheme = {
   // Temp fonts
@@ -31,3 +45,4 @@ const defaultTheme = {
 };
 
 export const darkTheme = { ...defaultTheme, ...dark };
+export const lightTheme = { ...defaultTheme, ...light };

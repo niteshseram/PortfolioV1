@@ -9,6 +9,14 @@ export const HeaderContainer = styled.header`
   height: 10vh;
   padding: 0px 50px;
 
+  .header-toggle {
+    display: none;
+    @media ${(props) => props.theme.breakpoints.md} {
+      display: flex;
+      margin-right: 10px;
+    }
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -19,17 +27,6 @@ export const HeaderContainer = styled.header`
   }
   @media ${(props) => props.theme.breakpoints.xs} {
     padding: 0 10px;
-  }
-
-  svg {
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    &:hover {
-      transform: scale(1.2);
-      transition: all 0.3s ease-in;
-    }
   }
 `;
 
@@ -102,6 +99,7 @@ export const NavLink = styled.a`
   line-height: 32px;
   transition: all 0.1s ease-in;
   text-transform: uppercase;
+  font-weight: 700;
 `;
 
 export const HamburgerContainer = styled.div`

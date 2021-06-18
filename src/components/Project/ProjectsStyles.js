@@ -126,6 +126,10 @@ export const ProjectContainer = styled.li`
       background-color: transparent;
       box-shadow: none;
       font-size: 1.6rem;
+      color: ${(props) =>
+        props.theme.darkMode.value
+          ? props.theme.text.tertiary
+          : props.theme.text.primary};
       &:hover {
         box-shadow: none;
       }
@@ -171,7 +175,7 @@ export const ProjectContainer = styled.li`
         }
       }
       svg {
-        color: white;
+        color: ${(props) => props.theme.text.primary};
         width: 20px;
         height: 20px;
         transition: all 0.3s ease-out;
