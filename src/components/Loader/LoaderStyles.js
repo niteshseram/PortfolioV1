@@ -36,7 +36,7 @@ export const LoadingCircle = styled.div`
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border-right: 0.3rem solid ${(props) => props.theme.colors.secondary};
+  border-right: 0.3rem solid ${(props) => props.theme.secondary};
   animation: ${rot} 2s linear infinite;
   position: absolute;
 `;

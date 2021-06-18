@@ -15,8 +15,8 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${(props) => props.theme.colors.bg};
-    color: ${(props) => props.theme.colors.text};
+    background: ${(props) => props.theme.bg};
+    color: ${(props) => props.theme.text.primary};
     cursor: default;
   }
   h1,h2,h3,h4,h5,h6,button {
@@ -29,15 +29,15 @@ const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
   ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: ${(props) => props.theme.colors.footer};
+  background-color: ${(props) => props.theme.primary};
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: ${(props) => props.theme.colors.secondary};
+  background-color: ${(props) => props.theme.secondary};
   border-radius: 25px;
 }
 `;

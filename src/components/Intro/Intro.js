@@ -3,7 +3,7 @@ import Image from "next/image";
 import {
   Section,
   SectionTitle,
-  TextColor,
+  TextHighlight,
 } from "./../../styles/GlobalComponents/index";
 import { SectionBody, LeftSection, RightSection } from "./IntroStyles";
 
@@ -14,10 +14,10 @@ const Intro = () => {
       <SectionBody>
         <LeftSection>
           <p>
-            Hello! My name is <TextColor>Seram Nitesh Singh</TextColor>. I am a
-            software developer and also <TextColor>Open Source</TextColor>{" "}
-            enthusiast. I have graduated in Computer Science Engineering from
-            Assam Don Bosco University in the year 2020.
+            Hello! My name is <TextHighlight>Seram Nitesh Singh</TextHighlight>.
+            I am a <TextHighlight>Software Developer</TextHighlight> and also{" "}
+            Open Source enthusiast. I have graduated in Computer Science
+            Engineering from Assam Don Bosco University in the year 2020.
           </p>
 
           <p>

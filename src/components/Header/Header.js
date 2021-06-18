@@ -1,16 +1,17 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
+import { FaMoon, FaSun } from "react-icons/fa";
 import {
   HeaderContainer,
-  Brand,
   NavContainer,
   NavLink,
   Hamburger,
   HamburgerContainer,
 } from "./HeaderStyles";
+import { Toggle } from "../../styles/GlobalComponents";
 
-const Header = () => {
+const Header = ({ darkMode }) => {
   const [open, setOpen] = useState(false);
 
   const HamburgerBubble = () => {
@@ -22,7 +23,11 @@ const Header = () => {
       <a href="/">
         <Image src="/images/logo.svg" width={40} height={40} alt="Logo" />
       </a>
+
       <NavContainer open={open}>
+        <Toggle onClick={darkMode.toggle} className="header-toggle">
+          {darkMode.value ? <FaSun /> : <FaMoon />}
+        </Toggle>
         <HamburgerContainer onClick={HamburgerBubble}>
           <Hamburger open={open} />
         </HamburgerContainer>
