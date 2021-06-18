@@ -13,7 +13,7 @@ export const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: ${(props) => props.theme.colors.footer};
+  background-color: ${(props) => props.theme.footer};
   p {
     margin-bottom: 10px;
     font-family: ${(props) => props.theme.fonts.fira};
@@ -33,10 +33,10 @@ export const SocialLinks = styled.div`
   svg {
     width: 25px;
     height: 25px;
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.text.primary};
     transition: all 0.3 ease-out;
     &:hover {
-      color: ${(props) => props.theme.colors.secondary};
+      color: ${(props) => props.theme.secondary};
       transition: all 0.3 ease-in;
     }
   }

@@ -8,7 +8,7 @@ export const ProjectContainer = styled.li`
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   a {
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.secondary};
   }
   &:last-of-type {
     margin-bottom: 30px;
@@ -117,9 +117,10 @@ export const ProjectContainer = styled.li`
     z-index: 2;
     padding: 25px;
     border-radius: 5px;
-    background-color: ${(props) => props.theme.colors.primary};
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.text.tertiary};
     font-size: 1.8rem;
-    box-shadow: 5px 5px 10px ${(props) => props.theme.colors.buttonShadow1};
+    box-shadow: 5px 5px 10px ${(props) => props.theme.buttonShadow1};
     @media ${(props) => props.theme.breakpoints.md} {
       padding: 20px 0;
       background-color: transparent;
@@ -177,7 +178,7 @@ export const ProjectContainer = styled.li`
       }
       &:hover {
         svg {
-          color: ${(props) => props.theme.colors.secondary};
+          color: ${(props) => props.theme.secondary};
           transition: all 0.3s ease-in;
         }
       }
@@ -222,7 +223,7 @@ export const ProjectContainer = styled.li`
         bottom: 0;
         z-index: 3;
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-        background-color: ${(props) => props.theme.colors.secondary};
+        background-color: ${(props) => props.theme.secondary};
         mix-blend-mode: screen;
       }
     }

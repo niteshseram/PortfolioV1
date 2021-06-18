@@ -8,7 +8,7 @@ export const Section = styled.section`
   justify-content: center;
   p {
     font-size: 2rem;
-    color: ${(props) => props.theme.colors.paraText};
+    color: ${(props) => props.theme.text.secondary};
     margin-bottom: 20px;
     line-height: 2.8rem;
   }
@@ -37,8 +37,8 @@ export const SectionTitle = styled.h1`
     z-index: -1;
     opacity: 0.8;
     font-weight: 700;
-    text-shadow: 1px 1px 3px ${(props) => props.theme.colors.buttonShadow2},
-      -1px -1px 3px ${(props) => props.theme.colors.buttonShadow1};
+    text-shadow: 1px 1px 3px ${(props) => props.theme.buttonShadow2},
+      -1px -1px 3px ${(props) => props.theme.buttonShadow1};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -46,12 +46,12 @@ export const SectionTitle = styled.h1`
     margin-bottom: 5rem;
     &:after {
       font-size: 5rem;
-      color: ${(props) => props.theme.colors.buttonShadow2};
+      color: ${(props) => props.theme.buttonShadow2};
       text-shadow: none;
     }
   }
 `;
 
 export const TextColor = styled.span`
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.text.primary};
 `;

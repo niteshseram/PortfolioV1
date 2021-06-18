@@ -21,8 +21,8 @@ export const ProfileImgContainer = styled.div`
 
   div {
     border-radius: 50%;
-    box-shadow: 5px 5px 16px ${(props) => props.theme.colors.buttonShadow1},
-      -5px -5px 16px ${(props) => props.theme.colors.buttonShadow2};
+    box-shadow: 5px 5px 16px ${(props) => props.theme.buttonShadow1},
+      -5px -5px 16px ${(props) => props.theme.buttonShadow2};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -54,7 +54,7 @@ export const HeroText = styled.h6`
   }
 `;
 export const HeroName = styled.h1`
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.secondary};
   font-size: 12rem;
   margin-top: 0px;
   margin-bottom: 5px;

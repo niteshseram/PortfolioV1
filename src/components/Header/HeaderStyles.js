@@ -47,7 +47,7 @@ export const NavContainer = styled.nav`
       right: 0;
       height: 100vh;
       width: 100%;
-      background-color: ${(props) => props.theme.colors.bubble};
+      background-color: ${(props) => props.theme.bubble};
       transition: all 1s ease-out;
       flex-direction: column;
       justify-content: space-around;
@@ -82,7 +82,7 @@ export const NavContainer = styled.nav`
       &:after {
         content: "";
         position: absolute;
-        background-color: ${(props) => props.theme.colors.secondary};
+        background-color: ${(props) => props.theme.secondary};
         height: 3px;
         width: 0%;
         left: 49%;
@@ -123,7 +123,7 @@ export const Hamburger = styled.div`
   z-index: 2;
   width: 35px;
   height: 3px;
-  background: ${(props) => props.theme.colors.text};
+  background: ${(props) => props.theme.text.primary};
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 
@@ -134,7 +134,7 @@ export const Hamburger = styled.div`
     cursor: pointer;
     width: 35px;
     height: 3px;
-    background: ${(props) => props.theme.colors.text};
+    background: ${(props) => props.theme.text.primary};
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
   }
