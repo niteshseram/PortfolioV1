@@ -35,7 +35,7 @@ export const SectionTitle = styled.h1`
     transform: translateX(-50%);
     color: transparent;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.5;
     font-weight: 700;
     text-shadow: 1px 1px 3px ${(props) => props.theme.buttonShadow2},
       -1px -1px 3px ${(props) => props.theme.buttonShadow1};

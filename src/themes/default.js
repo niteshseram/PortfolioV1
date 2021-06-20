@@ -22,8 +22,8 @@ const light = {
     tertiary: "#fff",
   },
   bubble: "#fff",
-  buttonShadow1: "#280549",
-  buttonShadow2: "#7f3ebc",
+  buttonShadow1: "#120420",
+  buttonShadow2: "#b490d6",
   footer: "#787878",
 };
 
