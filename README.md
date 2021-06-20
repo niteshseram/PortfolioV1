@@ -36,9 +36,9 @@ You'll need [Node.js](https://nodejs.org/en/download/) installed on your machine
 
 ```bash
 # Clone this reposiotry
-git clone https://github.com/niteshseram/niteshseram.github.io.git
+git clone https://github.com/niteshseram/Portfolio
 # Go into the repository folder
-cd niteshseram.github.io
+cd Portfolio
 # Install dependencies
 npm i install
 # Starting the local server
